@@ -1,7 +1,7 @@
-#include <graphics.h> 
+#include <graphics.h>
 #include <stdio.h>
 #include<conio.h>
-  
+
 // Driver code
 
 void boundaryFill4(int x, int y, int fill_color,int boundary_color)
@@ -38,10 +38,10 @@ void main()
     		x = i+10;
     		y = j-10;
     		rectangle(i , j , i+20 , j-20);
-    		boundaryFill4( x,  y, 3 , 15);
+    		boundaryFill4( x,  y, cyan , 15);
 		}
 	}
-
+    boundaryFill4( 180,  180, 6 , 15);
 
     getch();
     closegraph();
