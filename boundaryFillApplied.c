@@ -25,25 +25,81 @@ void main()
     int i , j;
     int x , y;
 
-
     initgraph(&gd, &gm, "C://TC3//BGI");
 
-    // rectangle function
-//    rectangle(150 , 250 , 160 , 240);
-//    rectangle(160 , 250 , 170 , 240);
-//    rectangle(170 , 250 , 180 , 240);
+    for(i=150; i<230; i = i+10 )
+    {
+    	for(j=230 ; j> 150 ; j= j-10)
+      {
+      		x = i+5;
+      		y = j-5;
+      		rectangle(i , j , i+10 , j-10);
+      		boundaryFill4( x,  y, 2  , 15);
+  		}
+  	}
+//eyes and mouth
+        //left eye
+        for(i=165;i<176;i=i+10)
+        {
+          for(j=175; j<186; j=j+10)
+          {
+            x = i;
+            y = j;
+            boundaryFill4( x,  y, 0 , 15);
+          }
+        }
 
-    for(i=150; i<250; i = i+20 ){
-    	for(j=250 ; j> 150 ; j= j-20){
-    		x = i+10;
-    		y = j-10;
-    		rectangle(i , j , i+20 , j-20);
-    		boundaryFill4( x,  y, cyan , 15);
-		}
-	}
-    boundaryFill4( 180,  180, 6 , 15);
+      //right eye
+      for(i=205;i<216;i=i+10)
+      {
+        for(j=175; j<186; j=j+10)
+        {
+          x = i;
+          y = j;
+          boundaryFill4( x,  y, 0 , 15);
+        }
+      }
+
+      //mouth mid
+      for(i=185;i<196;i=i+10)
+      {
+        for(j=195; j<216; j=j+10)
+        {
+          x = i;
+          y = j;
+          boundaryFill4( x,  y, 0 , 15);
+        }
+      }
+      //mouth left side
+      for(i=175;i<176;i=i+10)
+      {
+        for(j=205; j<226; j=j+10)
+        {
+          x = i;
+          y = j;
+          boundaryFill4( x,  y, 0 , 15);
+        }
+      }
+      //mouth right side
+      for(i=205;i<206;i=i+10)
+      {
+        for(j=205; j<226; j=j+10)
+        {
+          x = i;
+          y = j;
+          boundaryFill4( x,  y, 0 , 15);
+        }
+      }
+
 
     getch();
     closegraph();
+
+}
+void eyesandmouth(int i,int j,int x,int y)
+{
+
+      int gd = DETECT, gm;
+      initgraph(&gd, &gm, "C://TC3//BGI");
 
 }
