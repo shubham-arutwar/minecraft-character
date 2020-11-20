@@ -48,45 +48,34 @@ void main()
       		x = i+5;
       		y = j+5;
       		rectangle(i , j , i+10 , j+10);
-      		boundaryFill4( x,  y, 2  , 15);
+      		boundaryFill4( x,  y, 0 , 15);
   		}
   	}
 
 //eyes and mouth
-        //left eye
-        for(i=205;i<216;i=i+10)
-        {
-          for(j=175; j<186; j=j+10)
-          {
-            x = i;
-            y = j;
-            boundaryFill4( x,  y, 0 , 15);
-          }
-        }
-
-      //right eye
-      for(i=245;i<256;i=i+10)
-      {
-        for(j=175; j<186; j=j+10)
-        {
-          x = i;
-          y = j;
-          boundaryFill4( x,  y, 0 , 15);
-        }
-      }
-
-      //mouth mid
-      for(i=225;i<236;i=i+10)
-      {
-        for(j=195; j<216; j=j+10)
-        {
-          x = i;
-          y = j;
-          boundaryFill4( x,  y, 0 , 15);
-        }
-      }
-      colorprint(215,205,215,225,0);
+      colorprint(195,155,265,225,2);//face
+      colorprint(205,175,215,185,0);//left eye
+      colorprint(245,175,255,186,0);//right eye
+      colorprint(225,195,235,215,0);//mouth mid
+      colorprint(215,205,215,225,0);//mouth left size
       colorprint(245,205,245,225,0);//mouth right side
+
+//shirt
+      colorprint(195,235,265,325,3);
+      colorprint(215,235,245,245,2);//neck
+      colorprint(215,245,215,245,3);//
+      colorprint(245,245,245,245,3);
+
+//left hand
+      colorprint(155,235,185,325,3);
+      colorprint(155,275,185,345,2);//skin
+//left hand
+      colorprint(275,235,305,325,3);
+      colorprint(275,275,305,345,2);//skin
+
+//legs
+      colorprint(195,335,265,405,1);
+      colorprint(195,415,265,425,8);//shoe
 
 
     getch();
