@@ -24,9 +24,6 @@ void main()
     } else if(n == 2) {
       zombie();
     }
-    else{
-    	return 0;
-	}
 
     getch();
     closegraph();
