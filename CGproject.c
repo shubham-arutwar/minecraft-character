@@ -78,7 +78,6 @@ void creaper(void)
               x = i+5;
               y = j+5;
               rectangle(i , j , i+10 , j+10);
-              boundaryFill4( x,  y, 0 , 15);
           }
         }
 
@@ -108,9 +107,10 @@ void creaper(void)
             colorprint(5,27,12,28,8);//shoe
 }
 
-void zombie(){
+void zombie()
+{
 
-	printf("\n\nEnter the offset from left and top\n");
+	      printf("\n\nEnter the offset from left and top\n");
         scanf("%d%d", &offset_x, &offset_y);
         initgraph(&gd, &gm, "C://TC3//BGI");
         aosx=offset_x*10;
@@ -123,7 +123,6 @@ void zombie(){
               x = i+5;
               y = j+5;
               rectangle(i , j , i+10 , j+10);
-              boundaryFill4( x,  y, 0 , 15);
           }
         }
 
